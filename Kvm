@@ -1,0 +1,9 @@
+egrep -c '(vmx|svm)' /proc/cpuinfo
+
+
+kvm-ok
+sudo apt install -y cpu-checke
+sudo apt install -y qemu-kvm virt-manager libvirt-daemon-system virtinst libvirt-clients bridge-utils
+sudo systemctl enable --now libvirtd
+sudo systemctl start libvirtd
+sudo systemctl status libvirtd
